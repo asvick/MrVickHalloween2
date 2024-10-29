@@ -1,0 +1,98 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    font-family: 'Creepster', sans-serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ffa500;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffcccb;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro {
+    padding: 20px;
+    background-color: rgba(255, 69, 0, 0.8);
+    border: 2px solid #ffa500;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.intro img.pumpkin {
+    width: 100px;
+    margin: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.activities {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff4500;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Animation for floating pumpkin */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Flying Bat Animation */
+.bat {
+    position: fixed;
+    width: 80px;
+    top: 10px;
+    animation: batFlight 30s linear infinite;
+}
+
+@keyframes batFlight {
+    0% { left: -100px; transform: rotateY(0); }
+    50% { left: calc(100% - 80px); transform: rotateY(180deg); }
+    100% { left: -100px; transform: rotateY(0); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.9em;
+}
